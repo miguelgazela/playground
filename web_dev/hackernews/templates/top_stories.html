@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HackerNews Top Stories</title>
+
+        <style>
+            body {
+                font-family: "Helvetica-Neue", Helvetica, Georgia, sans serif;
+                background-color: #f9f9f9;
+            }
+
+            .hn-stories {
+                width: 960px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .hn-story {
+                
+            }
+
+            .hn-story + .hn-story {
+                margin-top: 15px;
+            }
+
+            h4 {
+                margin: 0;
+                font-weight: bold;
+                font-size: 16px;
+                color: #575757;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            a:hover,
+            a:focus {
+                text-decoration: underline;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <section class="hn-stories">
+            {% for story in stories %}
+                <article class="hn-story">
+                    <small>{{story.points}} points - {{story.num_comments}} comments</small>
+                    <h4><a href="{{story.link}}">{{story.title}}</a></h4>
+                    <small>{{story.domain}} - by {{story.submitter}} {{story.published_time}}</small>
+                </article>
+            {% endfor %}
+        </section>
+
+    </body>
+</html>
