@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>udacity-miguelgazela Blog</title>
+
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            h1>a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .container {
+                width: 960px;
+                margin: 0 auto;
+            }
+
+            .entry>.title {
+                border-bottom: 2px solid black;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1><a href="/blog">udacity-miguelgazela Blog</a></h1>
+            
+            {% for post in posts %}
+                <div class="entry">
+                    <h3 class="title">{{post.subject}}</h3>
+                    <p>{{post.content}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
