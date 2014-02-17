@@ -40,7 +40,8 @@ class MainPage(Handler):
 class Blog(Handler):
 
     def get(self):
-        posts = db.GqlQuery('SELECT * FROM Post ORDER BY created DESC')
+        posts = Post.all().order('-created')
+        # posts = db.GqlQuery('SELECT * FROM Post ORDER BY created DESC')
         self.render('blog.html', posts=posts)
 
 
