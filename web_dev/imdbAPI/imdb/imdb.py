@@ -1,4 +1,5 @@
 from utils import get_soup
+from constants import SEARCH_MOVIE_TITLE
 
 class IMDB(object):
     """
@@ -54,3 +55,20 @@ class IMDB(object):
                 movie['theaters'].append(theater)
 
             yield movie
+
+    def search_movie(self, query):
+        """
+        Returns a list containing the search results, each one
+        with image, title and link to its imdb page
+        """
+        soup = get_soup(SEARCH_MOVIE_TITLE, {'q': query})
+        results = []
+
+        for item in soup.find_all(class_="findResult"):
+            result = {}
+            result['text'] = item.find('td', class_="result_text").text.strip()
+            result['url'] = item.find('td', class_="result_text").a['href']
+            result['image'] = item.find('td', class_="primary_photo").a.img['src']
+            results.append(result)
+
+        return results
