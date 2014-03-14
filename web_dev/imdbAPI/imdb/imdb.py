@@ -8,12 +8,13 @@ class IMDB(object):
 
     def get_movies_near_you(self):
         """
-        Yields a list of movies and the theaters near you where they're
-        playing, as well as the showtimes for the day
+        Returns the list of movies playing near you, including the theaters
+        and showtimes for each movie
         """
 
         soup = get_soup('/showtimes/')
         list_movies = soup.find_all(class_='list_item')
+        movies = []
 
         for item in list_movies:
             movie = {}
@@ -54,12 +55,14 @@ class IMDB(object):
 
                 movie['theaters'].append(theater)
 
-            yield movie
+            movies.append(movie)
+        return movies
+
 
     def search_movie(self, query):
         """
-        Returns a list containing the search results, each one
-        with image, title and link to its imdb page
+        Returns the list of results of a movie search, each one
+        containing the image, title and link to its imdb page
         """
         soup = get_soup(SEARCH_MOVIE_TITLE, {'q': query})
         results = []
@@ -72,3 +75,11 @@ class IMDB(object):
             results.append(result)
 
         return results
+
+
+    def search_tv_show(self, query):
+        """
+        Returns the list of results of a tv show sarch, each one
+        containing the image, title and url to its imdb page
+        """
+        pass
