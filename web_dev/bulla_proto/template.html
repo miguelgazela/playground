@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set a shorter title for iOS6 devices when saved to home screen -->
+    <meta name="apple-mobile-web-app-title" content="Ratchet">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="dist/css/ratchet.min.css">
+
+    <!-- Intro paragraph styles. Delete once you start using this page -->
+    <style>
+        body {
+          color: #2A2D3F;
+        }
+
+        p {
+          color: #747986;
+        }
+
+        .welcome {
+          line-height: 1.5;
+          color: #555;
+        }
+
+        .bar-nav {
+          background-color: #525A6C;
+        }
+
+        .bar-nav h1,
+        a {
+          color: #25CDB4;
+        }
+
+        .content>.table-view:first-child {
+          margin-top: 0;
+        }
+
+        .content>.table-view {
+          border-top: 0;
+        }
+
+        .content>.table-view img {
+          width: 42px;
+          height: 42px;
+        }
+
+        .table-view-divider {
+          text-align: center;
+          background-color: #F5F5F5;
+          color: #BCBEC4;
+        }
+
+        .badge {
+          background-color: #BCBEC4;
+          color: #2A2D3F;
+        }
+
+        .badge>.icon {
+          font-size: 12px;
+        }
+
+        .media-title {
+          color: #25CDB4;
+        }
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <a class="icon icon-bars pull-left"></a>
+      <a class="icon icon-plus pull-right"></a>
+      <a class="icon icon-search pull-right"></a>
+      <h1 class="title">Products Scanned</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <ul class="table-view">
+        <li class="table-view-divider">Today <span class="badge">2</span></li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="img/duorum.png">
+            <div class="media-body">
+              <span class="media-title">Duorum</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div>
+                <span class="badge badge-primary"><span class="icon icon-home"></span> 14km</span>
+                <span class="badge badge-primary"><span class="icon icon-star-filled"></span> 17</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="img/pedra.png">
+            <div class="media-body">
+              <span class="media-title">Quinta da Pedra</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div>
+                <span class="badge badge-primary"><span class="icon icon-home"></span> 800m</span>
+                <span class="badge badge-primary"><span class="icon icon-star-filled"></span> 89</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-divider">This Week <span class="badge">1</span></li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="img/borba.png">
+            <div class="media-body">
+              <span class="media-title">Adega de Borba</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div>
+                <span class="badge badge-primary"><span class="icon icon-home"></span> 3km</span>
+                <span class="badge badge-primary"><span class="icon icon-star-filled"></span> 7</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-divider">February <span class="badge">13</span></li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="img/catena.png">
+            <div class="media-body">
+              <span class="media-title">Catena 2006</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div>
+                <span class="badge badge-primary"><span class="icon icon-home"></span> 3km</span>
+                <span class="badge badge-primary"><span class="icon icon-star-filled"></span> 7</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="dist/js/ratchet.min.js"></script>
+  </body>
+</html>
