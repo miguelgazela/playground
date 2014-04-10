@@ -16,20 +16,36 @@
 
     <!-- Include the compiled Ratchet CSS -->
     <link rel="stylesheet" href="dist/css/ratchet.min.css">
-    <link rel="stylesheet" href="dist/css/custom.css">
 
     <style>
-      .content {
-        background-color: #eaeaea;
-      }
+  
     </style>
 
   </head>
   <body>
+    <header class="bar bar-nav">
+      <h1 class="title">Interfaces</h1>
+    </header>
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
-      <a href="products_scanned.html" data-transition="slide-in">Products Scanned</a>
+      <ul class="table-view">
+        <li class="table-view-cell">
+          <a href="products_scanned.html" data-transition="slide-in" class="navigate-right">
+            Products Scanned
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Item 2
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Item 3
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- Include the compiled Ratchet JS -->

@@ -13,16 +13,17 @@ p {
 
 .title {
   text-align: center;
+  color: #E2E4E4;
 }
 
-/*.bar-nav {
-  background-color: #990000;
-}*/
+.bar-nav {
+  background-color: #740B26;
+}
 
-/*h1,
+h1,
 a {
-  color: #ECECEC;
-}*/
+  color: #E2E4E4;
+}
 
 .content>.table-view:first-child {
   margin-top: 0;
@@ -52,6 +53,6 @@ a {
   font-size: 12px;
 }
 
-/*.media-title {
-  color: #990000;
-}*/
+.media-title {
+  color: #740B26;
+}
