@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Map Us</title>
+    <style type="text/css">
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+
+    </style>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg9CXf8fdm3dpgPEuB7qNpS2IFNPWe7tw&sensor=true"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </head>
+  <body>
+    {% if not is_authenticated %}
+    <div>Not</div>
+    {% endif %}
+    <div id="map-canvas"/>
+  </body>
+</html>
