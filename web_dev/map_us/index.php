@@ -1,9 +1,7 @@
 <?php
     ini_set('display_errors', 'On');
     require_once('database.php');
-
-    session_set_cookie_params (0, '/~ei10076/projects/map_us/');
-    session_start();
+    require_once('session.php');
 
     require 'lib/Slim/Slim.php';
     \Slim\Slim::registerAutoloader();
@@ -22,7 +20,7 @@
     );
 
     function setup($app) {
-        //$app->contentType('application/json');
+        $app->contentType('application/json');
         $app->response()->header('Access-Control-Allow-Origin', '*');
         $app->response()->header('Access-Control-Allow-Methods','POST, GET, PUT, DELETE, OPTIONS, HEAD');
         $app->response()->header('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
@@ -31,191 +29,131 @@
 
     // ROUTES
 
+    define("HIS_SECRET_WORD", "fuckoff");
+    define("HER_SECRET_WORD", "addicted");
+
     $app->get('/', function () use ($app) {
-        setup($app);
         $context = array();
         $context['is_authenticated'] = false;
 
+        if(isset($_SESSION['secret_word'])) {
+            $context['is_authenticated'] = true;
+        }
+        
         $app->render('index.html', $context);
     });
 
-    $app->options('/(:name+)', function() use ($app) {
+    $app->post('/login', function() use ($app) {
         setup($app);
-        echo json_encode("accepted");
-    });
+        $data = $app->request->post();
 
-    $app->get('/products/:id', function ($id) use ($app) {
-        setup($app);
-        $result = array(
-            "product" => array(
-                "id" => $id,
-                "name" => "Product #".$id,
-                "description" => "This will contain the full description of the product. It will be displayed in the ProductDetail Activity",
-                "smallDescription" => "Small description displayed in products lists"
-            )
-        );
-        echo json_encode($result);
-    });
-
-    $app->get('/products/', function () use ($app) {
-        setup($app);
-        $result = array(
-            "products" => array(
-                array(
-                    "id" => "1",
-                    "name" => "Product #1",
-                    "description" => "This will contain the full description of the product. It will be displayed in the ProductDetail Activity",
-                    "smallDescription" => "Small description displayed in products lists"
-                ),
-                array(
-                    "id" => "2",
-                    "name" => "Product #2",
-                    "description" => "This will contain the full description of the product. It will be displayed in the ProductDetail Activity",
-                    "smallDescription" => "Small description displayed in products lists"
-                ),
-                array(
-                    "id" => "3",
-                    "name" => "Product #3",
-                    "description" => "This will contain the full description of the product. It will be displayed in the ProductDetail Activity",
-                    "smallDescription" => "Small description displayed in products lists"
-                ),
-            )
-        );
-	      echo json_encode($result);
-    });
-
-    $app->post('/validation/', function () use($app) {
-        setup($app);
-        $data = json_decode($app->request()->getBody(), true);
-
-        $result["result"] = $data["id"] === $data["encryptedID"];
-
-
-        if ($data["id"] == $data["encryptedID"]) {
-          $result["result"] = "valid";
-          $result["product"] =  array(
-                "id" => $data["productID"],
-                "name" => "Product #".$data["productID"],
-                "description" => "This will contain the full description of the product. It will be displayed in the ProductDetail Activity",
-                "smallDescription" => "Small description displayed in products lists"
-            );
+        if($data['secret_word'] == HIS_SECRET_WORD || $data['secret_word'] == HER_SECRET_WORD) {
+            $_SESSION['secret_word'] = $data['secret_word'];
         }
-        echo json_encode($result);
+
+        $app->redirect('/~ei10076/projects/map_us/');
     });
 
-
-    $app->get('/backoffices/', function () use ($app) {
-        setup($app);
-        $result["backoffices"] = array(
-            array(
-                "id" => 1,
-                "name" => "Gucci",
-                "users" => array(array("id" => 1, "name" => "John", "access" => 0), array("id" => 2, "name" => "Michael", "access" => 1))
-                ),
-            array(
-                "id" => 2,
-                "name" => "Versace",
-                "users" => array(array("id" => 1, "name" => "John", "access" => 0))
-                )
-            );
-        echo json_encode($result);
-    });
-    
-    $app->get('/backoffices/:id', function ($id) use ($app) {
-        setup($app);
-        $result["backoffice"] = array(
-            "id" => 1,
-            "name" => "Gucci",
-            "users" => array(array("id" => 1, "name" => "John", "access" => 0), array("id" => 2, "name" => "Michael", "access" => 1))
-        );
-
-        if($id == 2) {
-            $result["backoffice"] = array(
-                "id" => 2,
-                "name" => "Versace",
-                "users" => array(array("id" => 1, "name" => "John", "access" => 0))
-            );
-        }
-        echo json_encode($result);
+    $app->get('/logout', function() use($app) {
+        session_destroy();
+        $app->redirect('/~ei10076/projects/map_us/');
     });
 
-    $app->get('/selling_locations/', function () use ($app) {
+    // get all markers
+    $app->get('/api/markers', function() use ($app) {
+        global $db;
         setup($app);
-        $result["locations"] = array(
-            array(
-                "id" => 1,
-                "name" => "Porto",
-                "coordinates"=> array("latitude"=>"0.0", "longitude"=>"0.0")
-            ), array(
-                "id" => 2,
-                "name" => "Lisboa",
-                "coordinates" => array("latitude"=>"38.76", "longitude"=>"-9.09")
-            ), array(
-                "id" => 3,
-                "name" => "Lisboa",
-                "coordinates" => array("latitude"=>"38.77", "longitude"=>"-9.09")
-            ), array(
-                "id" => 4,
-                "name" => "Lisboa",
-                "coordinates" => array("latitude"=>"38.75", "longitude"=>"-9.09")
-            ));
-        echo json_encode($result);
-    });
-    
-    $app->get('/selling_locations/:id', function ($id) use ($app) {
-        setup($app);
-        $result["location"] = array(
-            "id" => 1,
-            "name" => "Porto",
-            "coordinates"=> array("latitude"=>"0.0", "longitude"=>"0.0")
-        );
 
-        if($id == 2) {
-            $result["location"] = array(
-                "id" => 2,
-                "name" => "Lisboa",
-                "coordinates"=> array("latitude"=>"38.76", "longitude"=>"-9.09")
-            );
-        }
-        echo json_encode($result);
-    });
+        if(isset($_SESSION['secret_word'])) {
+            $stmt = $db->prepare("select * from marker");
 
-    $app->post('/account/login', function () use ($app) {
-        setup($app);
-        $data = json_decode($app->request()->getBody(), true);
-
-        $result = array();
-
-        if($data["username"] == "user1") {
-            if($data["password"] == "a722c63db8ec8625af6cf71cb8c2d939") { //pass1
-                $result["result"] = "success";
-                $result["user"] = array("id"=>1, "name"=>"John", "username"=>"user1", "type"=>"superuser");
-            } else {
-                $result["result"] = "error";
-                $result["data"] = "wrong password";
-            }
-        } else if($data["username"] == "user2") {
-            if($data["password"] == "c1572d05424d0ecb2a65ec6a82aeacbf") { //pass2
-                $result["result"] = "success";
-                $result["user"] = array("id"=>2, "name"=>"Michael", "username"=>"user2", "type"=>"admin");
-            } else {
-                $result["result"] = "error";
-                $result["data"] = "wrong password";
+            try {
+                $stmt->execute();
+                $result = $stmt->fetchAll();
+                echo json_encode(array('status_code' => '000', 'status_msg' => 'OK', 'data' => $result));
+            } catch(PDOException $e) {
+                echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
             }
         } else {
-            $result["result"] = "error";
-            $result["data"] = "User ".$data["username"]." does not exist";
+            echo json_encode(array("status_code" => "002", "status_msg" => "ACCESS_DENIED"));
         }
-        
-        echo json_encode($result);
     });
 
-    $app->post('/account/logout', function () use ($app) {
+    // create a new marker
+    $app->post('/api/markers', function() use ($app) {
+        global $db;
         setup($app);
-        $data = json_decode($app->request()->getBody(), true);
-        $result["result"] = "success";
-        echo json_encode($result);
+        $data = $app->request->post();
+
+        if(isset($_SESSION['secret_word'])) {
+            $stmt = $db->prepare("insert into marker (id, lat, lng, type, visited, created_at) values (default, ?, ?, ?, default, default)");
+
+            $type = "M";
+            if($_SESSION['secret_word'] == HER_SECRET_WORD) {
+                $type = "F";
+            }
+
+            try {
+                $db->beginTransaction();
+                $stmt->execute( array($data['lat'], $data['lng'], $type));
+                $marker_id = $db->lastInsertId();
+                $db->commit();
+                echo json_encode(array("status_code" => "000", "status_msg" => "OK", 'data' => array('id' => $marker_id, 'type' => $type)));
+            } catch(PDOException $e) {
+                $db->rollback();
+                echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
+            }
+        } else {
+            echo json_encode(array("status_code" => "002", "status_msg" => "ACCESS_DENIED"));
+        }
+        
     });
+
+    // update marker identified by id
+    $app->put('/api/markers/:id', function($id) use ($app) {
+        global $db;
+        setup($app);
+        $data = $app->request->put();
+
+        if(isset($_SESSION['secret_word'])) {
+            $stmt = $db->prepare('update marker set lat = ?, lng = ? where id = ?');
+
+            try {
+                $db->beginTransaction();
+                $stmt->execute( array($data['lat'], $data['lng'], $id));
+                $db->commit();
+                echo json_encode(array("status_code" => "000", "status_msg" => "OK"));
+            } catch(PDOException $e) {
+                $db->rollback();
+                echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
+            }
+        } else {
+            echo json_encode(array("status_code" => "002", "status_msg" => "ACCESS_DENIED"));
+        }
+        
+    });
+
+    $app->put('/api/markers/visited/:id', function($id) use ($app) {
+        global $db;
+        setup($app);
+
+        if(isset($_SESSION['secret_word'])) {
+            $stmt = $db->prepare("update marker set visited = 1 where id = ?");
+
+            try {
+                $db->beginTransaction();
+                $stmt->execute( array($id));
+                $db->commit();
+                echo json_encode(array("status_code" => "000", "status_msg" => "OK"));
+            } catch(PDOException $e) {
+                $db->rollback();
+                echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
+            }
+        } else {
+            echo json_encode(array("status_code" => "002", "status_msg" => "ACCESS_DENIED"));
+        }
+    });
+
 
     $app->run();
 ?>
