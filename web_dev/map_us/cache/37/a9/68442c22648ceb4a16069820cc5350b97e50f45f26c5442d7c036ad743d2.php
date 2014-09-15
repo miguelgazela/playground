@@ -46,8 +46,39 @@ class __TwigTemplate_37a968442c22648ceb4a16069820cc5350b97e50f45f26c5442d7c036ad
         background-color: #fff;
         -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
         -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-        box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-        
+        box-shadow: 0 3px 5px rgba(0,0,0,0.2); 
+      }
+
+      #stats {
+        position: absolute;
+        z-index: 100;
+        width: 60px;
+        min-height: 1px;
+        bottom: 50px;
+        left: 6px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        box-shadow: 0 3px 5px rgba(0,0,0,0.2); 
+      }
+
+      .stat-container {
+        text-align: center;
+        padding: 5px;
+      }
+
+      .stat-container:not(:last-child) {
+        border-bottom: 1px solid #E9E9EB;
+      }
+
+      .stat-title {
+        color: #A5A5A5;
+        margin: 0;
+      }
+
+      .stat-number {
+        margin: 0;
+        color: #434550;
       }
 
       #authentication-panel .btn {
@@ -97,10 +128,11 @@ class __TwigTemplate_37a968442c22648ceb4a16069820cc5350b97e50f45f26c5442d7c036ad
 
   </head>
   <body>
+
     ";
-        // line 82
+        // line 114
         if ((!(isset($context["is_authenticated"]) ? $context["is_authenticated"] : null))) {
-            // line 83
+            // line 115
             echo "    <div id=\"authentication-panel\">
       <h3>What's the secret word?</h3>
       <form role=\"form\" method=\"POST\" action=\"login\">
@@ -110,8 +142,20 @@ class __TwigTemplate_37a968442c22648ceb4a16069820cc5350b97e50f45f26c5442d7c036ad
     </div>
     ";
         }
-        // line 91
-        echo "    <div id=\"map-canvas\"/>
+        // line 123
+        echo "    
+    <div id=\"stats\">
+      <div class=\"stat-container\">
+        <h4 id=\"places-counter\" class=\"stat-number\"></h4>
+        <p class=\"stat-title\">Places</p>
+      </div>
+      <div class=\"stat-container\">
+        <h4 id=\"visited-counter\" class=\"stat-number\"></h4>
+        <p class=\"stat-title\">Visited</p>
+      </div>
+    </div>
+
+    <div id=\"map-canvas\"/>
   </body>
 </html>";
     }
@@ -128,6 +172,6 @@ class __TwigTemplate_37a968442c22648ceb4a16069820cc5350b97e50f45f26c5442d7c036ad
 
     public function getDebugInfo()
     {
-        return array (  114 => 91,  104 => 83,  102 => 82,  19 => 1,);
+        return array (  146 => 123,  136 => 115,  134 => 114,  19 => 1,);
     }
 }

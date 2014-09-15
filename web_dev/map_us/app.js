@@ -9,8 +9,7 @@ function initialize() {
         center: new google.maps.LatLng(41.177842, -8.597423),
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: 
-        [
+        styles: [
             {
                 "featureType": "administrative",
                 "stylers": [
@@ -69,7 +68,7 @@ function initialize() {
                 } else if (entry['type'] === "M") {
                     marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png");
                 } else {
-                    marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png")
+                    marker.setIcon("http://maps.google.com/mapfiles/ms/icons/red-dot.png");
                 }
 
                 // add infoWindow
@@ -82,8 +81,19 @@ function initialize() {
                 google.maps.event.addDomListener(removeBtn, "click", function(event) {
                     var confirmed = confirm("Are you sure you want to remove this marker?");
                     if(confirmed) {
-                        // remove the marker from db
-                        marker.setMap(null);
+                        
+                        $.ajax({
+                            url: "api/markers/" + marker.id,
+                            type: "DELETE",
+                            dataType: "json",
+                            success: function(result) {
+                                if (result['status_code'] === "000") {
+                                    marker.setMap(null);
+                                } else {
+                                    alert("Something bad happened");
+                                }
+                            }
+                        });
                     }
                 });
 
@@ -137,6 +147,19 @@ function initialize() {
             });
         } else {
             console.log('Error loading markers!');
+        }
+    });
+
+    // update stats
+    $.get("api/markers/count", function(result) {
+        if(result['status_code'] === "000") {
+            $('#places-counter').html(result['data']['count']);
+        }
+    });
+
+    $.get("api/markers/visited/count", function(result) {
+        if(result['status_code'] === "000") {
+            $('#visited-counter').html(result['data']['count']);
         }
     });
 

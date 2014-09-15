@@ -487,7 +487,7 @@ hr {
 }
 /* line 355, main.scss */
 .tile.tile-128 .tile-inner {
-  color: #f9f6f2;
+  color: rgba(0, 0, 0, 0);
   background: #edcf72;
   background: url("../images/128.png");
   background-size: cover;
@@ -502,7 +502,7 @@ hr {
 }
 /* line 355, main.scss */
 .tile.tile-256 .tile-inner {
-  color: #f9f6f2;
+  color: rgba(0, 0, 0, 0);
   background: #edcc61;
   background: url("../images/256.png");
   background-size: cover;
@@ -517,7 +517,7 @@ hr {
 }
 /* line 355, main.scss */
 .tile.tile-512 .tile-inner {
-  color: #f9f6f2;
+  color: rgba(0, 0, 0, 0);
   background: #edc850;
   background: url("../images/512.png");
   background-size: cover;
@@ -532,7 +532,7 @@ hr {
 }
 /* line 355, main.scss */
 .tile.tile-1024 .tile-inner {
-  color: #f9f6f2;
+  color: rgba(0, 0, 0, 0);
   background: #edc53f;
   background: url("../images/1024.png");
   background-size: cover;
@@ -547,7 +547,7 @@ hr {
 }
 /* line 355, main.scss */
 .tile.tile-2048 .tile-inner {
-  color: #f9f6f2;
+  color: rgba(0, 0, 0, 0);
   background: #edc22e;
   background: url("../images/2048.png");
   background-size: cover;

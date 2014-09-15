@@ -27,6 +27,13 @@
         $app->response()->header('Access-Control-Allow-Credentials', 'true');
     }
 
+    function checkAuthentication() {
+        if (!isset($_SESSION['secret_word'])) {
+            echo json_encode(array("status_code" => "002", "status_msg" => "ACCESS_DENIED"));
+            exit;
+        }
+    }
+
     // ROUTES
 
     define("HIS_SECRET_WORD", "fuckoff");
@@ -79,6 +86,54 @@
         }
     });
 
+    $app->get('/api/markers/count', function() use ($app) {
+        global $db;
+        setup($app);
+        checkAuthentication();
+
+        $stmt = $db->prepare("select count(id) as count from marker");
+
+        try {
+            $stmt->execute();
+            $result = $stmt->fetch();
+            echo json_encode(array('status_code' => '000', 'status_msg' => 'OK', 'data' => $result));
+        } catch(PDOException $e) {
+            echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
+        }
+    });
+
+    $app->get('/api/markers/count', function() use ($app) {
+        global $db;
+        setup($app);
+        checkAuthentication();
+
+        $stmt = $db->prepare("select count(id) as count from marker");
+
+        try {
+            $stmt->execute();
+            $result = $stmt->fetch();
+            echo json_encode(array('status_code' => '000', 'status_msg' => 'OK', 'data' => $result));
+        } catch(PDOException $e) {
+            echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
+        }
+    });
+
+    $app->get('/api/markers/visited/count', function() use ($app) {
+        global $db;
+        setup($app);
+        checkAuthentication();
+
+        $stmt = $db->prepare("select count(id) as count from marker where visited = 1");
+
+        try {
+            $stmt->execute();
+            $result = $stmt->fetch();
+            echo json_encode(array('status_code' => '000', 'status_msg' => 'OK', 'data' => $result));
+        } catch(PDOException $e) {
+            echo json_encode(array("status_code" => "001", "status_msg" => "REQUEST_FAILED"));
+        }
+    });
+
     // create a new marker
     $app->post('/api/markers', function() use ($app) {
         global $db;
@@ -109,7 +164,7 @@
         
     });
 
-    // update marker identified by id
+    // update location of marker identified by id
     $app->put('/api/markers/:id', function($id) use ($app) {
         global $db;
         setup($app);
@@ -133,6 +188,7 @@
         
     });
 
+    // visit a marker
     $app->put('/api/markers/visited/:id', function($id) use ($app) {
         global $db;
         setup($app);
@@ -154,6 +210,25 @@
         }
     });
 
+    // remove a marker
+    $app->delete('/api/markers/:id', function($id) use ($app) {
+        global $db;
+        setup($app);
+
+        checkAuthentication();
+
+        $stmt = $db->prepare("delete from marker where id = ?");
+
+        try {
+            $db->beginTransaction();
+            $stmt->execute(array($id));
+            $db->commit();
+            echo json_encode(array("status_code" => "000", "status_msg" => "OK"));
+        } catch(PDOException $e) {
+            $db->rollback();
+            echo json_encode(array("status_code" => "002", "status_msg" => "ACCESS_DENIED"));
+        }
+    });
 
     $app->run();
 ?>
