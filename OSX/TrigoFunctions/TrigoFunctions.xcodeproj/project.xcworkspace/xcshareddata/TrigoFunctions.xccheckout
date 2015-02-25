@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68793185-0E13-44C2-9503-2747AD526412</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TrigoFunctions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9102F32D1C6D58806634104A7F3D9A38DE329937</key>
+		<string>https://github.com/miguelgazela/playground.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OSX/TrigoFunctions/TrigoFunctions.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9102F32D1C6D58806634104A7F3D9A38DE329937</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/miguelgazela/playground.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9102F32D1C6D58806634104A7F3D9A38DE329937</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9102F32D1C6D58806634104A7F3D9A38DE329937</string>
+			<key>IDESourceControlWCCName</key>
+			<string>playground</string>
+		</dict>
+	</array>
+</dict>
+</plist>
