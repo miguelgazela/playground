@@ -8,13 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSSpeechSynthesizerDelegate>
 
 {
     NSSpeechSynthesizer *_speechSynth;
 }
 
+@property (nonatomic) NSArray *voices;
+
 @property (weak) IBOutlet NSTextField *textField;
+@property (weak) IBOutlet NSButton *stopButton;
+@property (weak) IBOutlet NSButton *speakButton;
+
+@property (weak) IBOutlet NSTableView *tableView;
 
 - (IBAction)stopIt:(id)sender;
 - (IBAction)sayIt:(id)sender;
