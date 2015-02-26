@@ -24,7 +24,7 @@
         _firstNumber = ((int)random() % 100) + 1;
         _secondNumber = ((int)random() % 100) + 1;
         
-        _entryDate = d;
+        _entryDate = [d retain];
     }
     
     return self;
@@ -37,8 +37,14 @@
     
 //    [df setTimeStyle:NSDateFormatterNoStyle];
 //    [df setDateStyle:NSDateFormatterMediumStyle];
-    
     return [NSString stringWithFormat:@"%@ = %d and %d", [df stringFromDate:self.entryDate], self.firstNumber, self.secondNumber];
+}
+
+- (void)dealloc
+{
+    NSLog(@"deallocating %@", self);
+    [_entryDate release];
+    [super dealloc];
 }
 
 @end
