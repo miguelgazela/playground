@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3DCDC6551A9E2F1E00B352D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC6541A9E2F1E00B352D2 /* main.m */; };
+		3DCDC65D1A9E342300B352D2 /* LotteryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC65C1A9E342300B352D2 /* LotteryEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		3DCDC6511A9E2F1E00B352D2 /* Lottery */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lottery; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCDC6541A9E2F1E00B352D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DCDC65B1A9E342300B352D2 /* LotteryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryEntry.h; sourceTree = "<group>"; };
+		3DCDC65C1A9E342300B352D2 /* LotteryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				3DCDC6541A9E2F1E00B352D2 /* main.m */,
+				3DCDC65B1A9E342300B352D2 /* LotteryEntry.h */,
+				3DCDC65C1A9E342300B352D2 /* LotteryEntry.m */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCDC65D1A9E342300B352D2 /* LotteryEntry.m in Sources */,
 				3DCDC6551A9E2F1E00B352D2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +208,7 @@
 		3DCDC6591A9E2F1E00B352D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +216,7 @@
 		3DCDC65A1A9E2F1E00B352D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +240,7 @@
 				3DCDC65A1A9E2F1E00B352D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
