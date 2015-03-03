@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DF500B41AA070E2001A5221 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF500B31AA070E2001A5221 /* AppDelegate.m */; };
+		3DF500B61AA070E2001A5221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF500B51AA070E2001A5221 /* main.m */; };
+		3DF500B91AA070E2001A5221 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF500B81AA070E2001A5221 /* Document.m */; };
+		3DF500BC1AA070E2001A5221 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF500BA1AA070E2001A5221 /* Document.xib */; };
+		3DF500BE1AA070E2001A5221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF500BD1AA070E2001A5221 /* Images.xcassets */; };
+		3DF500C11AA070E2001A5221 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF500BF1AA070E2001A5221 /* MainMenu.xib */; };
+		3DF500CD1AA070E3001A5221 /* RaiseManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF500CC1AA070E3001A5221 /* RaiseManTests.m */; };
+		3DF500D81AA07151001A5221 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF500D71AA07150001A5221 /* Person.m */; };
+		3DF501481AA0C1F3001A5221 /* MOPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF501471AA0C1F3001A5221 /* MOPreferenceController.m */; };
+		3DF5014B1AA0C25D001A5221 /* MOAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5014A1AA0C25D001A5221 /* MOAppController.m */; };
+		3DF5014D1AA0C395001A5221 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF5014C1AA0C395001A5221 /* Preferences.xib */; };
+		3DF5014F1AA0C94C001A5221 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DF5014E1AA0C94C001A5221 /* About.xib */; };
+		3DF501521AA0C9B7001A5221 /* MOAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF501511AA0C9B7001A5221 /* MOAboutController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DF500C71AA070E3001A5221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF500A51AA070E2001A5221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF500AC1AA070E2001A5221;
+			remoteInfo = RaiseMan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DF500AD1AA070E2001A5221 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF500B11AA070E2001A5221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF500B21AA070E2001A5221 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DF500B31AA070E2001A5221 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DF500B51AA070E2001A5221 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DF500B71AA070E2001A5221 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		3DF500B81AA070E2001A5221 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		3DF500BB1AA070E2001A5221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		3DF500BD1AA070E2001A5221 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DF500C01AA070E2001A5221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3DF500C61AA070E3001A5221 /* RaiseManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaiseManTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF500CB1AA070E3001A5221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF500CC1AA070E3001A5221 /* RaiseManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaiseManTests.m; sourceTree = "<group>"; };
+		3DF500D61AA07150001A5221 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3DF500D71AA07150001A5221 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		3DF501461AA0C1F3001A5221 /* MOPreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPreferenceController.h; sourceTree = "<group>"; };
+		3DF501471AA0C1F3001A5221 /* MOPreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPreferenceController.m; sourceTree = "<group>"; };
+		3DF501491AA0C25D001A5221 /* MOAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAppController.h; sourceTree = "<group>"; };
+		3DF5014A1AA0C25D001A5221 /* MOAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOAppController.m; sourceTree = "<group>"; };
+		3DF5014C1AA0C395001A5221 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		3DF5014E1AA0C94C001A5221 /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		3DF501501AA0C9B7001A5221 /* MOAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAboutController.h; sourceTree = "<group>"; };
+		3DF501511AA0C9B7001A5221 /* MOAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOAboutController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF500AA1AA070E2001A5221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF500C31AA070E3001A5221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DF500A41AA070E1001A5221 = {
+			isa = PBXGroup;
+			children = (
+				3DF500AF1AA070E2001A5221 /* RaiseMan */,
+				3DF500C91AA070E3001A5221 /* RaiseManTests */,
+				3DF500AE1AA070E2001A5221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF500AE1AA070E2001A5221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF500AD1AA070E2001A5221 /* RaiseMan.app */,
+				3DF500C61AA070E3001A5221 /* RaiseManTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF500AF1AA070E2001A5221 /* RaiseMan */ = {
+			isa = PBXGroup;
+			children = (
+				3DF500B21AA070E2001A5221 /* AppDelegate.h */,
+				3DF500B31AA070E2001A5221 /* AppDelegate.m */,
+				3DF500B71AA070E2001A5221 /* Document.h */,
+				3DF500D61AA07150001A5221 /* Person.h */,
+				3DF500D71AA07150001A5221 /* Person.m */,
+				3DF500B81AA070E2001A5221 /* Document.m */,
+				3DF500BA1AA070E2001A5221 /* Document.xib */,
+				3DF501461AA0C1F3001A5221 /* MOPreferenceController.h */,
+				3DF501491AA0C25D001A5221 /* MOAppController.h */,
+				3DF501501AA0C9B7001A5221 /* MOAboutController.h */,
+				3DF501511AA0C9B7001A5221 /* MOAboutController.m */,
+				3DF5014A1AA0C25D001A5221 /* MOAppController.m */,
+				3DF5014E1AA0C94C001A5221 /* About.xib */,
+				3DF5014C1AA0C395001A5221 /* Preferences.xib */,
+				3DF501471AA0C1F3001A5221 /* MOPreferenceController.m */,
+				3DF500BD1AA070E2001A5221 /* Images.xcassets */,
+				3DF500BF1AA070E2001A5221 /* MainMenu.xib */,
+				3DF500B01AA070E2001A5221 /* Supporting Files */,
+			);
+			path = RaiseMan;
+			sourceTree = "<group>";
+		};
+		3DF500B01AA070E2001A5221 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF500B11AA070E2001A5221 /* Info.plist */,
+				3DF500B51AA070E2001A5221 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF500C91AA070E3001A5221 /* RaiseManTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DF500CC1AA070E3001A5221 /* RaiseManTests.m */,
+				3DF500CA1AA070E3001A5221 /* Supporting Files */,
+			);
+			path = RaiseManTests;
+			sourceTree = "<group>";
+		};
+		3DF500CA1AA070E3001A5221 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF500CB1AA070E3001A5221 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF500AC1AA070E2001A5221 /* RaiseMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF500D01AA070E3001A5221 /* Build configuration list for PBXNativeTarget "RaiseMan" */;
+			buildPhases = (
+				3DF500A91AA070E2001A5221 /* Sources */,
+				3DF500AA1AA070E2001A5221 /* Frameworks */,
+				3DF500AB1AA070E2001A5221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaiseMan;
+			productName = RaiseMan;
+			productReference = 3DF500AD1AA070E2001A5221 /* RaiseMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DF500C51AA070E3001A5221 /* RaiseManTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF500D31AA070E3001A5221 /* Build configuration list for PBXNativeTarget "RaiseManTests" */;
+			buildPhases = (
+				3DF500C21AA070E3001A5221 /* Sources */,
+				3DF500C31AA070E3001A5221 /* Frameworks */,
+				3DF500C41AA070E3001A5221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF500C81AA070E3001A5221 /* PBXTargetDependency */,
+			);
+			name = RaiseManTests;
+			productName = RaiseManTests;
+			productReference = 3DF500C61AA070E3001A5221 /* RaiseManTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF500A51AA070E2001A5221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = GAZELAINC;
+				TargetAttributes = {
+					3DF500AC1AA070E2001A5221 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3DF500C51AA070E3001A5221 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3DF500AC1AA070E2001A5221;
+					};
+				};
+			};
+			buildConfigurationList = 3DF500A81AA070E2001A5221 /* Build configuration list for PBXProject "RaiseMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DF500A41AA070E1001A5221;
+			productRefGroup = 3DF500AE1AA070E2001A5221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF500AC1AA070E2001A5221 /* RaiseMan */,
+				3DF500C51AA070E3001A5221 /* RaiseManTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF500AB1AA070E2001A5221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF500BC1AA070E2001A5221 /* Document.xib in Resources */,
+				3DF500BE1AA070E2001A5221 /* Images.xcassets in Resources */,
+				3DF5014D1AA0C395001A5221 /* Preferences.xib in Resources */,
+				3DF5014F1AA0C94C001A5221 /* About.xib in Resources */,
+				3DF500C11AA070E2001A5221 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF500C41AA070E3001A5221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF500A91AA070E2001A5221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF500B91AA070E2001A5221 /* Document.m in Sources */,
+				3DF5014B1AA0C25D001A5221 /* MOAppController.m in Sources */,
+				3DF501481AA0C1F3001A5221 /* MOPreferenceController.m in Sources */,
+				3DF500B61AA070E2001A5221 /* main.m in Sources */,
+				3DF501521AA0C9B7001A5221 /* MOAboutController.m in Sources */,
+				3DF500D81AA07151001A5221 /* Person.m in Sources */,
+				3DF500B41AA070E2001A5221 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF500C21AA070E3001A5221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF500CD1AA070E3001A5221 /* RaiseManTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF500C81AA070E3001A5221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF500AC1AA070E2001A5221 /* RaiseMan */;
+			targetProxy = 3DF500C71AA070E3001A5221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DF500BA1AA070E2001A5221 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF500BB1AA070E2001A5221 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		3DF500BF1AA070E2001A5221 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF500C01AA070E2001A5221 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF500CE1AA070E3001A5221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3DF500CF1AA070E3001A5221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3DF500D11AA070E3001A5221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RaiseMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DF500D21AA070E3001A5221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RaiseMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DF500D41AA070E3001A5221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RaiseManTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaiseMan.app/Contents/MacOS/RaiseMan";
+			};
+			name = Debug;
+		};
+		3DF500D51AA070E3001A5221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RaiseManTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaiseMan.app/Contents/MacOS/RaiseMan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF500A81AA070E2001A5221 /* Build configuration list for PBXProject "RaiseMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF500CE1AA070E3001A5221 /* Debug */,
+				3DF500CF1AA070E3001A5221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF500D01AA070E3001A5221 /* Build configuration list for PBXNativeTarget "RaiseMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF500D11AA070E3001A5221 /* Debug */,
+				3DF500D21AA070E3001A5221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF500D31AA070E3001A5221 /* Build configuration list for PBXNativeTarget "RaiseManTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF500D41AA070E3001A5221 /* Debug */,
+				3DF500D51AA070E3001A5221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DF500A51AA070E2001A5221 /* Project object */;
+}
