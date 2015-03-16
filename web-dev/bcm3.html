@@ -7,7 +7,30 @@
 
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <link rel="stylesheet" type="text/css" href="../css/odometer-theme-train-station.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style type="text/css">
+      #content {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      #counter {
+        font-size: 40px;
+        margin: 20px 0;
+      }
+
+      .text {
+        font-size: 2rem;
+      }
+    </style>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,27 +40,40 @@
       <header>
         <h1>Budget Counter</h1>
         <p>Just something for you information</p>
-
-        <p class="view"><a href="https://github.com/miguelgazela/playground">View the Project on GitHub <small>miguelgazela/playground</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/miguelgazela/playground/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/miguelgazela/playground/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/miguelgazela/playground">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
 
-      <section>
-        <h3>Hey!</h3>
+      <section id="content">
+        <div class="text">I've earned</div>
+        <div id="counter" class="odometer"></div>
+        <div class="text">euros</div>
       </section>
 
       <footer>
         <p>This project is maintained by <a href="https://github.com/miguelgazela">miguelgazela</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="../javascripts/scale.fix.js"></script>
+    <script src="../javascripts/odometer.min.js"></script>
+    <script src="../javascripts/moment.min.js"></script>
+    <script src="../javascripts/jquery-1.11.2.min.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+
+        setInterval(function () {
+
+        var started = moment("2015-02-23 08:00:00");
+        var now = moment();
+
+        var secondsSince = now.diff(started) / 1000;
+        var earningsPerSecond = 745 / (30 * 24 * 60 * 60);
+
+        $("#counter").html((earningsPerSecond * secondsSince).toFixed(8));
+
+        }, 200);
+      });
+    </script>
     
   </body>
 </html>
