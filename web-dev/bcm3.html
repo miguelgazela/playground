@@ -11,24 +11,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <style type="text/css">
-      #content {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-      }
-
-      #counter {
-        font-size: 40px;
-        margin: 20px 0;
-      }
-
-      .text {
-        font-size: 2rem;
-      }
+        html, body {
+            height: 100%;
+        }
+        
+        .myContent {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: space-around;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: space-around;
+            justify-content: space-around;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center
+            height: 100vh;
+        }
+        
+        .content p {
+            margin: 0;
+        }
+        
+        .timer {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        
+        .odometer {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+      
     </style>
 
     <!--[if lt IE 9]>
@@ -36,18 +57,22 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Budget Counter</h1>
-        <p>Just something for you information</p>
-      </header>
-
-      <section id="content">
-        <div class="text">I've earned</div>
-        <div id="counter" class="odometer"></div>
-        <div class="text">euros</div>
-      </section>
-
+      
+        <div class="myContent">
+            <div class="timer">
+        	    <p>I've earned</p>
+                <div id="monthCounter" class="odometer"></div>
+                <p>euros this month</p>
+            </div>
+        
+            <div class="timer">
+        	    <p>I've earned</p>
+                <div id="totalCounter" class="odometer"></div>
+                <p>euros so far</p>
+            </div>
+              
+      </div>
+      
       <footer>
         <p>This project is maintained by <a href="https://github.com/miguelgazela">miguelgazela</a></p>
         <p><small>Hosted on GitHub Pages</small></p>
@@ -59,23 +84,27 @@
     <script src="../javascripts/jquery-1.11.2.min.js"></script>
     
     <script>
-      $(document).ready(function() {
-
-        window.odometerOptions = {
-          format: '(,ddd).ddd'
-        };
+        $(document).ready(function() {
+          
+        var started = moment("2015-02-23 08:00:00");
+        
+        var now = moment();
+        if (now.month() != started.month()) {
+            var monthBeginning = now.subtract(now.date(), 'days');
+        }
 
         setInterval(function () {
 
-        var started = moment("2015-02-23 08:00:00");
-        var now = moment();
+            var earningsPerSecond = 745 / (30 * 24 * 60 * 60);
+            var now = moment();
+        
+            var secondsSinceBeginning = now.diff(started) / 1000;
+            var secondsSinceMonthBeginning = now.diff(monthBeginning) / 1000;
 
-        var secondsSince = now.diff(started) / 1000;
-        var earningsPerSecond = 745 / (30 * 24 * 60 * 60);
+            $("#totalCounter").html((earningsPerSecond * secondsSinceBeginning).toFixed(4));
+            $("#monthCounter").html((earningsPerSecond * secondsSinceMonthBeginning).toFixed(4));
 
-        $("#counter").html((earningsPerSecond * secondsSince).toFixed(8));
-
-        }, 200);
+        }, 500);
       });
     </script>
     
