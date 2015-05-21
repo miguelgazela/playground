@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D982B3F1ADBB2910033C5CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B3E1ADBB2910033C5CE /* AppDelegate.m */; };
+		3D982B411ADBB2910033C5CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B401ADBB2910033C5CE /* main.m */; };
+		3D982B431ADBB2910033C5CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D982B421ADBB2910033C5CE /* Images.xcassets */; };
+		3D982B461ADBB2910033C5CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D982B441ADBB2910033C5CE /* MainMenu.xib */; };
+		3D982B521ADBB2910033C5CE /* TestingInstantDragWithTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B511ADBB2910033C5CE /* TestingInstantDragWithTableTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D982B4C1ADBB2910033C5CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D982B301ADBB2910033C5CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D982B371ADBB2910033C5CE;
+			remoteInfo = TestingInstantDragWithTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D982B381ADBB2910033C5CE /* TestingInstantDragWithTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingInstantDragWithTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D982B3C1ADBB2910033C5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D982B3D1ADBB2910033C5CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D982B3E1ADBB2910033C5CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D982B401ADBB2910033C5CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D982B421ADBB2910033C5CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D982B451ADBB2910033C5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3D982B4B1ADBB2910033C5CE /* TestingInstantDragWithTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingInstantDragWithTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D982B501ADBB2910033C5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D982B511ADBB2910033C5CE /* TestingInstantDragWithTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingInstantDragWithTableTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D982B351ADBB2910033C5CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D982B481ADBB2910033C5CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D982B2F1ADBB2910033C5CE = {
+			isa = PBXGroup;
+			children = (
+				3D982B3A1ADBB2910033C5CE /* TestingInstantDragWithTable */,
+				3D982B4E1ADBB2910033C5CE /* TestingInstantDragWithTableTests */,
+				3D982B391ADBB2910033C5CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D982B391ADBB2910033C5CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B381ADBB2910033C5CE /* TestingInstantDragWithTable.app */,
+				3D982B4B1ADBB2910033C5CE /* TestingInstantDragWithTableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D982B3A1ADBB2910033C5CE /* TestingInstantDragWithTable */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B3D1ADBB2910033C5CE /* AppDelegate.h */,
+				3D982B3E1ADBB2910033C5CE /* AppDelegate.m */,
+				3D982B421ADBB2910033C5CE /* Images.xcassets */,
+				3D982B441ADBB2910033C5CE /* MainMenu.xib */,
+				3D982B3B1ADBB2910033C5CE /* Supporting Files */,
+			);
+			path = TestingInstantDragWithTable;
+			sourceTree = "<group>";
+		};
+		3D982B3B1ADBB2910033C5CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B3C1ADBB2910033C5CE /* Info.plist */,
+				3D982B401ADBB2910033C5CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D982B4E1ADBB2910033C5CE /* TestingInstantDragWithTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B511ADBB2910033C5CE /* TestingInstantDragWithTableTests.m */,
+				3D982B4F1ADBB2910033C5CE /* Supporting Files */,
+			);
+			path = TestingInstantDragWithTableTests;
+			sourceTree = "<group>";
+		};
+		3D982B4F1ADBB2910033C5CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B501ADBB2910033C5CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D982B371ADBB2910033C5CE /* TestingInstantDragWithTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D982B551ADBB2910033C5CE /* Build configuration list for PBXNativeTarget "TestingInstantDragWithTable" */;
+			buildPhases = (
+				3D982B341ADBB2910033C5CE /* Sources */,
+				3D982B351ADBB2910033C5CE /* Frameworks */,
+				3D982B361ADBB2910033C5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingInstantDragWithTable;
+			productName = TestingInstantDragWithTable;
+			productReference = 3D982B381ADBB2910033C5CE /* TestingInstantDragWithTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D982B4A1ADBB2910033C5CE /* TestingInstantDragWithTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D982B581ADBB2910033C5CE /* Build configuration list for PBXNativeTarget "TestingInstantDragWithTableTests" */;
+			buildPhases = (
+				3D982B471ADBB2910033C5CE /* Sources */,
+				3D982B481ADBB2910033C5CE /* Frameworks */,
+				3D982B491ADBB2910033C5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D982B4D1ADBB2910033C5CE /* PBXTargetDependency */,
+			);
+			name = TestingInstantDragWithTableTests;
+			productName = TestingInstantDragWithTableTests;
+			productReference = 3D982B4B1ADBB2910033C5CE /* TestingInstantDragWithTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D982B301ADBB2910033C5CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Miguel Oliveira";
+				TargetAttributes = {
+					3D982B371ADBB2910033C5CE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3D982B4A1ADBB2910033C5CE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3D982B371ADBB2910033C5CE;
+					};
+				};
+			};
+			buildConfigurationList = 3D982B331ADBB2910033C5CE /* Build configuration list for PBXProject "TestingInstantDragWithTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D982B2F1ADBB2910033C5CE;
+			productRefGroup = 3D982B391ADBB2910033C5CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D982B371ADBB2910033C5CE /* TestingInstantDragWithTable */,
+				3D982B4A1ADBB2910033C5CE /* TestingInstantDragWithTableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D982B361ADBB2910033C5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D982B431ADBB2910033C5CE /* Images.xcassets in Resources */,
+				3D982B461ADBB2910033C5CE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D982B491ADBB2910033C5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D982B341ADBB2910033C5CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D982B411ADBB2910033C5CE /* main.m in Sources */,
+				3D982B3F1ADBB2910033C5CE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D982B471ADBB2910033C5CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D982B521ADBB2910033C5CE /* TestingInstantDragWithTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D982B4D1ADBB2910033C5CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D982B371ADBB2910033C5CE /* TestingInstantDragWithTable */;
+			targetProxy = 3D982B4C1ADBB2910033C5CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D982B441ADBB2910033C5CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D982B451ADBB2910033C5CE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D982B531ADBB2910033C5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3D982B541ADBB2910033C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3D982B561ADBB2910033C5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestingInstantDragWithTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D982B571ADBB2910033C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestingInstantDragWithTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D982B591ADBB2910033C5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestingInstantDragWithTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingInstantDragWithTable.app/Contents/MacOS/TestingInstantDragWithTable";
+			};
+			name = Debug;
+		};
+		3D982B5A1ADBB2910033C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestingInstantDragWithTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingInstantDragWithTable.app/Contents/MacOS/TestingInstantDragWithTable";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D982B331ADBB2910033C5CE /* Build configuration list for PBXProject "TestingInstantDragWithTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D982B531ADBB2910033C5CE /* Debug */,
+				3D982B541ADBB2910033C5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D982B551ADBB2910033C5CE /* Build configuration list for PBXNativeTarget "TestingInstantDragWithTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D982B561ADBB2910033C5CE /* Debug */,
+				3D982B571ADBB2910033C5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D982B581ADBB2910033C5CE /* Build configuration list for PBXNativeTarget "TestingInstantDragWithTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D982B591ADBB2910033C5CE /* Debug */,
+				3D982B5A1ADBB2910033C5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D982B301ADBB2910033C5CE /* Project object */;
+}

@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC965031AC4614D004BBE4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC965021AC4614D004BBE4E /* AppDelegate.m */; };
+		3DC965051AC4614D004BBE4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC965041AC4614D004BBE4E /* main.m */; };
+		3DC965071AC4614D004BBE4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC965061AC4614D004BBE4E /* Images.xcassets */; };
+		3DC9650A1AC4614D004BBE4E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC965081AC4614D004BBE4E /* MainMenu.xib */; };
+		3DC965161AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC965151AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.m */; };
+		3DC965211AC4619A004BBE4E /* MoCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC965201AC4619A004BBE4E /* MoCustomTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC965101AC4614E004BBE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC964F41AC4614D004BBE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC964FB1AC4614D004BBE4E;
+			remoteInfo = TestingCustomTextFieldAutoGrow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DC964FC1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingCustomTextFieldAutoGrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC965001AC4614D004BBE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC965011AC4614D004BBE4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DC965021AC4614D004BBE4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DC965041AC4614D004BBE4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DC965061AC4614D004BBE4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DC965091AC4614D004BBE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3DC9650F1AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingCustomTextFieldAutoGrowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC965141AC4614E004BBE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC965151AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingCustomTextFieldAutoGrowTests.m; sourceTree = "<group>"; };
+		3DC9651F1AC4619A004BBE4E /* MoCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoCustomTextField.h; sourceTree = "<group>"; };
+		3DC965201AC4619A004BBE4E /* MoCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoCustomTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC964F91AC4614D004BBE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC9650C1AC4614E004BBE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC964F31AC4614D004BBE4E = {
+			isa = PBXGroup;
+			children = (
+				3DC964FE1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow */,
+				3DC965121AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests */,
+				3DC964FD1AC4614D004BBE4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC964FD1AC4614D004BBE4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC964FC1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow.app */,
+				3DC9650F1AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC964FE1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow */ = {
+			isa = PBXGroup;
+			children = (
+				3DC965011AC4614D004BBE4E /* AppDelegate.h */,
+				3DC965021AC4614D004BBE4E /* AppDelegate.m */,
+				3DC965061AC4614D004BBE4E /* Images.xcassets */,
+				3DC965081AC4614D004BBE4E /* MainMenu.xib */,
+				3DC9651F1AC4619A004BBE4E /* MoCustomTextField.h */,
+				3DC965201AC4619A004BBE4E /* MoCustomTextField.m */,
+				3DC964FF1AC4614D004BBE4E /* Supporting Files */,
+			);
+			path = TestingCustomTextFieldAutoGrow;
+			sourceTree = "<group>";
+		};
+		3DC964FF1AC4614D004BBE4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC965001AC4614D004BBE4E /* Info.plist */,
+				3DC965041AC4614D004BBE4E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC965121AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC965151AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.m */,
+				3DC965131AC4614E004BBE4E /* Supporting Files */,
+			);
+			path = TestingCustomTextFieldAutoGrowTests;
+			sourceTree = "<group>";
+		};
+		3DC965131AC4614E004BBE4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC965141AC4614E004BBE4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC964FB1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC965191AC4614E004BBE4E /* Build configuration list for PBXNativeTarget "TestingCustomTextFieldAutoGrow" */;
+			buildPhases = (
+				3DC964F81AC4614D004BBE4E /* Sources */,
+				3DC964F91AC4614D004BBE4E /* Frameworks */,
+				3DC964FA1AC4614D004BBE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingCustomTextFieldAutoGrow;
+			productName = TestingCustomTextFieldAutoGrow;
+			productReference = 3DC964FC1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC9650E1AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC9651C1AC4614E004BBE4E /* Build configuration list for PBXNativeTarget "TestingCustomTextFieldAutoGrowTests" */;
+			buildPhases = (
+				3DC9650B1AC4614E004BBE4E /* Sources */,
+				3DC9650C1AC4614E004BBE4E /* Frameworks */,
+				3DC9650D1AC4614E004BBE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC965111AC4614E004BBE4E /* PBXTargetDependency */,
+			);
+			name = TestingCustomTextFieldAutoGrowTests;
+			productName = TestingCustomTextFieldAutoGrowTests;
+			productReference = 3DC9650F1AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC964F41AC4614D004BBE4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Miguel Oliveira";
+				TargetAttributes = {
+					3DC964FB1AC4614D004BBE4E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3DC9650E1AC4614E004BBE4E = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3DC964FB1AC4614D004BBE4E;
+					};
+				};
+			};
+			buildConfigurationList = 3DC964F71AC4614D004BBE4E /* Build configuration list for PBXProject "TestingCustomTextFieldAutoGrow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC964F31AC4614D004BBE4E;
+			productRefGroup = 3DC964FD1AC4614D004BBE4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC964FB1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow */,
+				3DC9650E1AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC964FA1AC4614D004BBE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC965071AC4614D004BBE4E /* Images.xcassets in Resources */,
+				3DC9650A1AC4614D004BBE4E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC9650D1AC4614E004BBE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC964F81AC4614D004BBE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC965051AC4614D004BBE4E /* main.m in Sources */,
+				3DC965211AC4619A004BBE4E /* MoCustomTextField.m in Sources */,
+				3DC965031AC4614D004BBE4E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC9650B1AC4614E004BBE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC965161AC4614E004BBE4E /* TestingCustomTextFieldAutoGrowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC965111AC4614E004BBE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC964FB1AC4614D004BBE4E /* TestingCustomTextFieldAutoGrow */;
+			targetProxy = 3DC965101AC4614E004BBE4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC965081AC4614D004BBE4E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC965091AC4614D004BBE4E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC965171AC4614E004BBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3DC965181AC4614E004BBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3DC9651A1AC4614E004BBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestingCustomTextFieldAutoGrow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DC9651B1AC4614E004BBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestingCustomTextFieldAutoGrow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DC9651D1AC4614E004BBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestingCustomTextFieldAutoGrowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingCustomTextFieldAutoGrow.app/Contents/MacOS/TestingCustomTextFieldAutoGrow";
+			};
+			name = Debug;
+		};
+		3DC9651E1AC4614E004BBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestingCustomTextFieldAutoGrowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingCustomTextFieldAutoGrow.app/Contents/MacOS/TestingCustomTextFieldAutoGrow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC964F71AC4614D004BBE4E /* Build configuration list for PBXProject "TestingCustomTextFieldAutoGrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC965171AC4614E004BBE4E /* Debug */,
+				3DC965181AC4614E004BBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC965191AC4614E004BBE4E /* Build configuration list for PBXNativeTarget "TestingCustomTextFieldAutoGrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC9651A1AC4614E004BBE4E /* Debug */,
+				3DC9651B1AC4614E004BBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DC9651C1AC4614E004BBE4E /* Build configuration list for PBXNativeTarget "TestingCustomTextFieldAutoGrowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC9651D1AC4614E004BBE4E /* Debug */,
+				3DC9651E1AC4614E004BBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC964F41AC4614D004BBE4E /* Project object */;
+}

@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D982B6B1ADBB3470033C5CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B6A1ADBB3470033C5CE /* AppDelegate.m */; };
+		3D982B6D1ADBB3470033C5CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B6C1ADBB3470033C5CE /* main.m */; };
+		3D982B701ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B6E1ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodeld */; };
+		3D982B721ADBB3470033C5CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D982B711ADBB3470033C5CE /* Images.xcassets */; };
+		3D982B751ADBB3470033C5CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D982B731ADBB3470033C5CE /* MainMenu.xib */; };
+		3D982B811ADBB3470033C5CE /* TestingTablesForInstantDragTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B801ADBB3470033C5CE /* TestingTablesForInstantDragTests.m */; };
+		3D982B8C1ADBC0040033C5CE /* CarArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D982B8B1ADBC0040033C5CE /* CarArrayController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D982B7B1ADBB3470033C5CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D982B5C1ADBB3460033C5CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D982B631ADBB3460033C5CE;
+			remoteInfo = TestingTablesForInstantDrag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D982B641ADBB3460033C5CE /* TestingTablesForInstantDrag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingTablesForInstantDrag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D982B681ADBB3460033C5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D982B691ADBB3460033C5CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D982B6A1ADBB3470033C5CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D982B6C1ADBB3470033C5CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D982B6F1ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestingTablesForInstantDrag.xcdatamodel; sourceTree = "<group>"; };
+		3D982B711ADBB3470033C5CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D982B741ADBB3470033C5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3D982B7A1ADBB3470033C5CE /* TestingTablesForInstantDragTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingTablesForInstantDragTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D982B7F1ADBB3470033C5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D982B801ADBB3470033C5CE /* TestingTablesForInstantDragTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingTablesForInstantDragTests.m; sourceTree = "<group>"; };
+		3D982B8A1ADBC0040033C5CE /* CarArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarArrayController.h; sourceTree = "<group>"; };
+		3D982B8B1ADBC0040033C5CE /* CarArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarArrayController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D982B611ADBB3460033C5CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D982B771ADBB3470033C5CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D982B5B1ADBB3460033C5CE = {
+			isa = PBXGroup;
+			children = (
+				3D982B661ADBB3460033C5CE /* TestingTablesForInstantDrag */,
+				3D982B7D1ADBB3470033C5CE /* TestingTablesForInstantDragTests */,
+				3D982B651ADBB3460033C5CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D982B651ADBB3460033C5CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B641ADBB3460033C5CE /* TestingTablesForInstantDrag.app */,
+				3D982B7A1ADBB3470033C5CE /* TestingTablesForInstantDragTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D982B661ADBB3460033C5CE /* TestingTablesForInstantDrag */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B691ADBB3460033C5CE /* AppDelegate.h */,
+				3D982B6A1ADBB3470033C5CE /* AppDelegate.m */,
+				3D982B711ADBB3470033C5CE /* Images.xcassets */,
+				3D982B731ADBB3470033C5CE /* MainMenu.xib */,
+				3D982B6E1ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodeld */,
+				3D982B671ADBB3460033C5CE /* Supporting Files */,
+				3D982B8A1ADBC0040033C5CE /* CarArrayController.h */,
+				3D982B8B1ADBC0040033C5CE /* CarArrayController.m */,
+			);
+			path = TestingTablesForInstantDrag;
+			sourceTree = "<group>";
+		};
+		3D982B671ADBB3460033C5CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B681ADBB3460033C5CE /* Info.plist */,
+				3D982B6C1ADBB3470033C5CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D982B7D1ADBB3470033C5CE /* TestingTablesForInstantDragTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B801ADBB3470033C5CE /* TestingTablesForInstantDragTests.m */,
+				3D982B7E1ADBB3470033C5CE /* Supporting Files */,
+			);
+			path = TestingTablesForInstantDragTests;
+			sourceTree = "<group>";
+		};
+		3D982B7E1ADBB3470033C5CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D982B7F1ADBB3470033C5CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D982B631ADBB3460033C5CE /* TestingTablesForInstantDrag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D982B841ADBB3470033C5CE /* Build configuration list for PBXNativeTarget "TestingTablesForInstantDrag" */;
+			buildPhases = (
+				3D982B601ADBB3460033C5CE /* Sources */,
+				3D982B611ADBB3460033C5CE /* Frameworks */,
+				3D982B621ADBB3460033C5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingTablesForInstantDrag;
+			productName = TestingTablesForInstantDrag;
+			productReference = 3D982B641ADBB3460033C5CE /* TestingTablesForInstantDrag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D982B791ADBB3470033C5CE /* TestingTablesForInstantDragTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D982B871ADBB3470033C5CE /* Build configuration list for PBXNativeTarget "TestingTablesForInstantDragTests" */;
+			buildPhases = (
+				3D982B761ADBB3470033C5CE /* Sources */,
+				3D982B771ADBB3470033C5CE /* Frameworks */,
+				3D982B781ADBB3470033C5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D982B7C1ADBB3470033C5CE /* PBXTargetDependency */,
+			);
+			name = TestingTablesForInstantDragTests;
+			productName = TestingTablesForInstantDragTests;
+			productReference = 3D982B7A1ADBB3470033C5CE /* TestingTablesForInstantDragTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D982B5C1ADBB3460033C5CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Miguel Oliveira";
+				TargetAttributes = {
+					3D982B631ADBB3460033C5CE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3D982B791ADBB3470033C5CE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3D982B631ADBB3460033C5CE;
+					};
+				};
+			};
+			buildConfigurationList = 3D982B5F1ADBB3460033C5CE /* Build configuration list for PBXProject "TestingTablesForInstantDrag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D982B5B1ADBB3460033C5CE;
+			productRefGroup = 3D982B651ADBB3460033C5CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D982B631ADBB3460033C5CE /* TestingTablesForInstantDrag */,
+				3D982B791ADBB3470033C5CE /* TestingTablesForInstantDragTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D982B621ADBB3460033C5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D982B721ADBB3470033C5CE /* Images.xcassets in Resources */,
+				3D982B751ADBB3470033C5CE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D982B781ADBB3470033C5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D982B601ADBB3460033C5CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D982B8C1ADBC0040033C5CE /* CarArrayController.m in Sources */,
+				3D982B6D1ADBB3470033C5CE /* main.m in Sources */,
+				3D982B6B1ADBB3470033C5CE /* AppDelegate.m in Sources */,
+				3D982B701ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D982B761ADBB3470033C5CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D982B811ADBB3470033C5CE /* TestingTablesForInstantDragTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D982B7C1ADBB3470033C5CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D982B631ADBB3460033C5CE /* TestingTablesForInstantDrag */;
+			targetProxy = 3D982B7B1ADBB3470033C5CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D982B731ADBB3470033C5CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D982B741ADBB3470033C5CE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D982B821ADBB3470033C5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3D982B831ADBB3470033C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3D982B851ADBB3470033C5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestingTablesForInstantDrag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D982B861ADBB3470033C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestingTablesForInstantDrag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D982B881ADBB3470033C5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestingTablesForInstantDragTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingTablesForInstantDrag.app/Contents/MacOS/TestingTablesForInstantDrag";
+			};
+			name = Debug;
+		};
+		3D982B891ADBB3470033C5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestingTablesForInstantDragTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingTablesForInstantDrag.app/Contents/MacOS/TestingTablesForInstantDrag";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D982B5F1ADBB3460033C5CE /* Build configuration list for PBXProject "TestingTablesForInstantDrag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D982B821ADBB3470033C5CE /* Debug */,
+				3D982B831ADBB3470033C5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D982B841ADBB3470033C5CE /* Build configuration list for PBXNativeTarget "TestingTablesForInstantDrag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D982B851ADBB3470033C5CE /* Debug */,
+				3D982B861ADBB3470033C5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D982B871ADBB3470033C5CE /* Build configuration list for PBXNativeTarget "TestingTablesForInstantDragTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D982B881ADBB3470033C5CE /* Debug */,
+				3D982B891ADBB3470033C5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D982B6E1ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D982B6F1ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodel */,
+			);
+			currentVersion = 3D982B6F1ADBB3470033C5CE /* TestingTablesForInstantDrag.xcdatamodel */;
+			path = TestingTablesForInstantDrag.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D982B5C1ADBB3460033C5CE /* Project object */;
+}
