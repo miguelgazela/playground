@@ -8,15 +8,38 @@
 
 #import "AppDelegate.h"
 
+#import "MOAnalyticsManager.h"
+#import "MOBarViewController.h"
+#import "MOFooViewController.h"
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
+@property (nonatomic, strong) MOAnalyticsManager *analyticsManager;
+
+@property (nonatomic, strong) MOFooViewController *fooViewController;
+@property (nonatomic, strong) MOBarViewController *barViewController;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+
+    // initialize views
+    
+    self.barViewController = [[MOBarViewController alloc] initWithNibName:[self.barViewController className] bundle:nil];
+    
+    self.fooViewController = [[MOFooViewController alloc] initWithNibName:[self.fooViewController className] bundle:nil];
+    
+    [self.fooView addSubview:self.fooViewController.view];
+    [self.barView addSubview:self.barViewController.view];
+    
+    
+    // initialize analytics
+    
+    self.analyticsManager = [[MOAnalyticsManager alloc] init];
 }
 
 

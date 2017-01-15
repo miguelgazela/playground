@@ -14,9 +14,9 @@
 
 @implementation MOBarViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
+- (IBAction)didTapBarButton:(id)sender {
+    
+    NSLog(@"didTapBarButton:");
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface MOBarViewController : NSViewController
 
+@property (weak) IBOutlet NSButton *barButton;
+
 @end

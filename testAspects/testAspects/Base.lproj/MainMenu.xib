@@ -15,8 +15,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="barView" destination="V8H-jI-Sww" id="vJY-vQ-f96"/>
-                <outlet property="fooView" destination="rJ9-Ha-uaU" id="VdH-Km-NXo"/>
+                <outlet property="barView" destination="V8H-jI-Sww" id="ykw-Q1-jnq"/>
+                <outlet property="fooView" destination="rJ9-Ha-uaU" id="p4x-Vn-f0X"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>

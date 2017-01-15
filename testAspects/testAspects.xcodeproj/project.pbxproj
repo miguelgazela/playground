@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F706B64242681D9F496AB43 /* libPods-testAspects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5436CD09B70609F04D503E53 /* libPods-testAspects.a */; };
 		4A82DA971E2840B900F2C488 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A82DA961E2840B900F2C488 /* AppDelegate.m */; };
 		4A82DA9A1E2840B900F2C488 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A82DA991E2840B900F2C488 /* main.m */; };
 		4A82DA9C1E2840B900F2C488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A82DA9B1E2840B900F2C488 /* Assets.xcassets */; };
 		4A82DA9F1E2840B900F2C488 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A82DA9D1E2840B900F2C488 /* MainMenu.xib */; };
 		4A82DAAE1E28413400F2C488 /* MOBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A82DAAC1E28413400F2C488 /* MOBarViewController.m */; };
 		4A82DAAF1E28413400F2C488 /* MOBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A82DAAD1E28413400F2C488 /* MOBarViewController.xib */; };
+		4AA6678D1E2B909000BEDE79 /* MOAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6678C1E2B909000BEDE79 /* MOAnalytics.m */; };
+		4AA667911E2B90C300BEDE79 /* MOBarAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA667901E2B90C300BEDE79 /* MOBarAnalytics.m */; };
+		4AA667951E2B943900BEDE79 /* MOAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA667941E2B943900BEDE79 /* MOAnalyticsManager.m */; };
+		4AA667981E2B945A00BEDE79 /* MOFooAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA667971E2B945A00BEDE79 /* MOFooAnalytics.m */; };
+		4AA6679C1E2B9B4600BEDE79 /* MOFooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6679A1E2B9B4600BEDE79 /* MOFooViewController.m */; };
+		4AA6679D1E2B9B4600BEDE79 /* MOFooViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA6679B1E2B9B4600BEDE79 /* MOFooViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		4A82DAAB1E28413400F2C488 /* MOBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBarViewController.h; sourceTree = "<group>"; };
 		4A82DAAC1E28413400F2C488 /* MOBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBarViewController.m; sourceTree = "<group>"; };
 		4A82DAAD1E28413400F2C488 /* MOBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOBarViewController.xib; sourceTree = "<group>"; };
+		4AA6678B1E2B909000BEDE79 /* MOAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAnalytics.h; sourceTree = "<group>"; };
+		4AA6678C1E2B909000BEDE79 /* MOAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOAnalytics.m; sourceTree = "<group>"; };
+		4AA6678F1E2B90C300BEDE79 /* MOBarAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBarAnalytics.h; sourceTree = "<group>"; };
+		4AA667901E2B90C300BEDE79 /* MOBarAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBarAnalytics.m; sourceTree = "<group>"; };
+		4AA667931E2B943900BEDE79 /* MOAnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAnalyticsManager.h; sourceTree = "<group>"; };
+		4AA667941E2B943900BEDE79 /* MOAnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOAnalyticsManager.m; sourceTree = "<group>"; };
+		4AA667961E2B945A00BEDE79 /* MOFooAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOFooAnalytics.h; sourceTree = "<group>"; };
+		4AA667971E2B945A00BEDE79 /* MOFooAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOFooAnalytics.m; sourceTree = "<group>"; };
+		4AA667991E2B9B4600BEDE79 /* MOFooViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOFooViewController.h; sourceTree = "<group>"; };
+		4AA6679A1E2B9B4600BEDE79 /* MOFooViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOFooViewController.m; sourceTree = "<group>"; };
+		4AA6679B1E2B9B4600BEDE79 /* MOFooViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOFooViewController.xib; sourceTree = "<group>"; };
+		5436CD09B70609F04D503E53 /* libPods-testAspects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testAspects.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11F00315E1BD4974C220F30 /* Pods-testAspects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAspects.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAspects/Pods-testAspects.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2EEA0A36D76C407077537B /* Pods-testAspects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAspects.release.xcconfig"; path = "Pods/Target Support Files/Pods-testAspects/Pods-testAspects.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +54,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F706B64242681D9F496AB43 /* libPods-testAspects.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B338B1DE4DEB078F6168ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5436CD09B70609F04D503E53 /* libPods-testAspects.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A82DA891E2840B900F2C488 = {
 			isa = PBXGroup;
 			children = (
 				4A82DA941E2840B900F2C488 /* testAspects */,
 				4A82DA931E2840B900F2C488 /* Products */,
+				C1A8C9760E238AF5F47AA38A /* Pods */,
+				00B338B1DE4DEB078F6168ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +92,17 @@
 			children = (
 				4A82DA951E2840B900F2C488 /* AppDelegate.h */,
 				4A82DA961E2840B900F2C488 /* AppDelegate.m */,
+				4A82DA9D1E2840B900F2C488 /* MainMenu.xib */,
+				4AA667991E2B9B4600BEDE79 /* MOFooViewController.h */,
+				4AA6679A1E2B9B4600BEDE79 /* MOFooViewController.m */,
+				4AA6679B1E2B9B4600BEDE79 /* MOFooViewController.xib */,
 				4A82DAAB1E28413400F2C488 /* MOBarViewController.h */,
 				4A82DAAC1E28413400F2C488 /* MOBarViewController.m */,
 				4A82DAAD1E28413400F2C488 /* MOBarViewController.xib */,
 				4A82DA9B1E2840B900F2C488 /* Assets.xcassets */,
-				4A82DA9D1E2840B900F2C488 /* MainMenu.xib */,
 				4A82DAA01E2840B900F2C488 /* Info.plist */,
 				4A82DA981E2840B900F2C488 /* Supporting Files */,
+				4AA6678E1E2B909E00BEDE79 /* Analytics */,
 			);
 			path = testAspects;
 			sourceTree = "<group>";
@@ -79,6 +115,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4AA6678E1E2B909E00BEDE79 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4AA667931E2B943900BEDE79 /* MOAnalyticsManager.h */,
+				4AA667941E2B943900BEDE79 /* MOAnalyticsManager.m */,
+				4AA6678B1E2B909000BEDE79 /* MOAnalytics.h */,
+				4AA6678C1E2B909000BEDE79 /* MOAnalytics.m */,
+				4AA667961E2B945A00BEDE79 /* MOFooAnalytics.h */,
+				4AA667971E2B945A00BEDE79 /* MOFooAnalytics.m */,
+				4AA6678F1E2B90C300BEDE79 /* MOBarAnalytics.h */,
+				4AA667901E2B90C300BEDE79 /* MOBarAnalytics.m */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		C1A8C9760E238AF5F47AA38A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A11F00315E1BD4974C220F30 /* Pods-testAspects.debug.xcconfig */,
+				DA2EEA0A36D76C407077537B /* Pods-testAspects.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A82DAA31E2840B900F2C488 /* Build configuration list for PBXNativeTarget "testAspects" */;
 			buildPhases = (
+				0F286663BE7329E84A06E569 /* [CP] Check Pods Manifest.lock */,
 				4A82DA8E1E2840B900F2C488 /* Sources */,
 				4A82DA8F1E2840B900F2C488 /* Frameworks */,
 				4A82DA901E2840B900F2C488 /* Resources */,
+				852C7EB1798FF271EF3CED42 /* [CP] Embed Pods Frameworks */,
+				393806C20531149AC54F9B61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,19 +203,73 @@
 				4A82DAAF1E28413400F2C488 /* MOBarViewController.xib in Resources */,
 				4A82DA9C1E2840B900F2C488 /* Assets.xcassets in Resources */,
 				4A82DA9F1E2840B900F2C488 /* MainMenu.xib in Resources */,
+				4AA6679D1E2B9B4600BEDE79 /* MOFooViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F286663BE7329E84A06E569 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		393806C20531149AC54F9B61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAspects/Pods-testAspects-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		852C7EB1798FF271EF3CED42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testAspects/Pods-testAspects-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A82DA8E1E2840B900F2C488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA667951E2B943900BEDE79 /* MOAnalyticsManager.m in Sources */,
+				4AA667981E2B945A00BEDE79 /* MOFooAnalytics.m in Sources */,
+				4AA6678D1E2B909000BEDE79 /* MOAnalytics.m in Sources */,
+				4AA667911E2B90C300BEDE79 /* MOBarAnalytics.m in Sources */,
 				4A82DAAE1E28413400F2C488 /* MOBarViewController.m in Sources */,
 				4A82DA9A1E2840B900F2C488 /* main.m in Sources */,
 				4A82DA971E2840B900F2C488 /* AppDelegate.m in Sources */,
+				4AA6679C1E2B9B4600BEDE79 /* MOFooViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +376,7 @@
 		};
 		4A82DAA41E2840B900F2C488 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11F00315E1BD4974C220F30 /* Pods-testAspects.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -271,6 +389,7 @@
 		};
 		4A82DAA51E2840B900F2C488 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2EEA0A36D76C407077537B /* Pods-testAspects.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -300,6 +419,7 @@
 				4A82DAA51E2840B900F2C488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
